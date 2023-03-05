@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
 }
 .form h1{width: 350px;
     margin-bottom: 20px;
@@ -25,7 +26,7 @@ form{
     background-color: rgb(7, 57, 101);
     flex-direction: column;
     justify-content: space-evenly;
-    height: 500px;
+    height: 550px;
     align-items: center;
     padding: 30px;
     border-radius: 10px;
@@ -54,4 +55,14 @@ form input{padding: 10px;
     border: none;
     outline: none;
     border-radius: 5px;
+}
+@media(max-width:768px){
+    .form{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
 }
